@@ -1,0 +1,45 @@
+<div class="medium-8 columns">
+    <h2>New Blog Post</h2>
+    <form (ngSubmit)= "onSubmit()">
+      <div class="medium-6 columns">
+        <label>
+          Title
+          <input [(ngModel)]="title" id="title" type="text" placeholder="Enter post title.">
+        </label>
+      </div>
+      <div class="medium-6 columns">
+        <label>
+          Date
+          <input [(ngModel)]="date" id="date" type="text" placeholder="Date">
+        </label>
+      </div>
+      <div class="medium-4 columns">
+        <label>
+          Image Url
+          <input [(ngModel)]="imageUrl" id="imageUrl" type="text" placeholder="Image Url">
+        </label>
+      </div>
+      <div class="medium-4 columns">
+        <label>
+          Author
+          <input [(ngModel)]="author" id="author" type="text" placeholder="Author's Name">
+        </label>
+      </div>
+      <div class="medium-4 columns">
+        <label>
+          Category
+          <input [(ngModel)]="category" id="category" type="text" placeholder="Categories">
+        </label>
+      </div>
+      <div class="medium-12 columns">
+        <label>
+          Content
+          <textarea [(ngModel)]="content" id="content" placeholder="Enter post content here"></textarea>
+        </label>
+      </div>
+      
+      <div class="medium-12 columns">
+        <input type="submit" class="button" value="Submit">
+      </div>
+    </form>
+  </div>
